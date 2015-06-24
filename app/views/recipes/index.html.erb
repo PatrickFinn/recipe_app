@@ -22,6 +22,7 @@
         <td><%= recipe.instructions %></td>
         <td><%= recipe.prep_time %></td>
         <td><%= recipe.cook_time %></td>
+        <td><%= recipe.minutes_total %></td>
         <td><%= link_to 'Show', recipe %></td>
         <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
         <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
