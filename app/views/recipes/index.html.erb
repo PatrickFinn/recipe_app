@@ -23,6 +23,7 @@
         <td><%= recipe.prep_time %></td>
         <td><%= recipe.cook_time %></td>
         <td><%= recipe.minutes_total %></td>
+        <td><%= image_tag recipe.pictures.url(:thumb) %></td>
         <td><%= link_to 'Show', recipe %></td>
         <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
         <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
